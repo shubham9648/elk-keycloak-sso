@@ -1,0 +1,14 @@
+server.host: "0.0.0.0"
+server.shutdownTimeout: "5s"
+elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+
+xpack.security.authc.providers:
+  basic.basic1:
+    order: 0
+    description: "Log in with Basic authentication"
+    icon: "logoElastic"
+  oidc.oidc1:
+    order: 1
+    realm: oidc1
+    description: "Log in with Lambdax SSO"
+    icon: "logoWeb"
